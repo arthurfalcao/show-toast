@@ -15,14 +15,6 @@ public class MessageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message);
-
-//        Button sendButton = (Button) findViewById(R.id.message_send);
-//        sendButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//            Intent intentGoToMain = new Intent(MessageActivity.this, MainActivity.class);
-//            }
-//        });
     }
 
     @Override
@@ -35,7 +27,6 @@ public class MessageActivity extends AppCompatActivity {
             Toast.makeText(MessageActivity.this, textMessage, Toast.LENGTH_SHORT).show();
 
             finish();
-
         }
         return super.onOptionsItemSelected(item);
     }
